@@ -28,6 +28,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   return (
     <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
       <motion.div
+        // Sets the navbar link styling to indicate that this is the page you're on... when you are on it
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
         {/* HEADER */}
