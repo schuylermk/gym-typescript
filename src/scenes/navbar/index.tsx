@@ -36,22 +36,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  />
+                    onCloseModal={() => setIsMenuToggled(false)}
+                    />
                   <Link
                     page="Benefits"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  />
+                    onCloseModal={() => setIsMenuToggled(false)}
+                    />
                   <Link
                     page="Our Classes"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  />
+                    onCloseModal={() => setIsMenuToggled(false)}
+                    />
                   <Link
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  />
+                    onCloseModal={() => setIsMenuToggled(false)}
+                    />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
                   <p>Sign In</p>
@@ -63,7 +67,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             ) : (
               <button
                 className="rounded-full bg-secondary-500 p-2"
-                onClick={() => setIsMenuToggled(!isMenuToggled)}
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
               >
                 <Bars3Icon className="h-6 w-6 text-white" />
               </button>
@@ -88,22 +92,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            />
+              onCloseModal={() => setIsMenuToggled(false)}
+              />
             <Link
               page="Benefits"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            />
+              onCloseModal={() => setIsMenuToggled(false)}
+              />
             <Link
               page="Our Classes"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            />
+              onCloseModal={() => setIsMenuToggled(false)}
+              />
             <Link
               page="Contact Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            />
+              onCloseModal={() => setIsMenuToggled(false)}
+              />
           </div>
         </div>
       )}
